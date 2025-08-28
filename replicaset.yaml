@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myapp-replicaset              # ReplicaSet Name
+  labels:
+    app: myapprs                        # ReplicaSet Label
+spec:
+  template:
+    metadata:
+      name: myapppod                  # Pod Name < this is ignored, as replicaset creates it's own names for pods.
+      labels:
+        app: myapppod                    # Pod Label
+    spec:
+      containers:
+        - name: nginx                 # Container name
+          image: nginx                # Container image
+#        - name: busybox                 # Container name
+#          image: busybox                # Container image
+  replicas: 3
+  selector:
+    matchLabels:
+      app: myapppod

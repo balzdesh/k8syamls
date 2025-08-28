@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginxpod                        #can not have special characters or caps
+  labels:
+    app: nginxlabel
+    type: frontend
+spec:
+  containers:
+    - name: nginxcontainer
+      image: nginx:latest
