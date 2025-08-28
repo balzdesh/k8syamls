@@ -7,7 +7,7 @@ metadata:
 spec:
   template:
     metadata:
-      name: myapppod                  # Pod Name < this is ignored, as replicaset creates it's own names for pods.
+#      name: myapppod                  # Pod Name < this is ignored, as replicaset creates it's own names for pods.
       labels:
         app: myapppod                    # Pod Label
     spec:
