@@ -14,7 +14,7 @@ spec:
       containers:
         - name: nginx                 # Container name
           image: nginx                # Container image
-#        - name: busybox                 # Container name
+#        - name: busybox                 # Container name 
 #          image: busybox                # Container image
   replicas: 3
   selector:
