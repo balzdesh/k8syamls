@@ -2,9 +2,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: myapppod                        #can not have special characters or caps
+  name: nginxpod                        #can not have special characters or caps
   labels:
-    app: nginxlabel
+    app: myapppod
     type: frontend
 spec:
   containers:
