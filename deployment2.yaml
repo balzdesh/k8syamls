@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-deployment              # Deployment Name
+  labels:
+    app: myappd                        # Deployment label
+spec:
+  template:
+    metadata:
+#      name: myapppod                  # Pod Name < this is ignored, as replicaset creates it's own names for pods.
+      labels:
+        app: myapppod                    # Pod Label
+    spec:
+      containers:
+        - name: nginxcontainer                 # Container name
+          image: nginx:1.13                # Container image
+            #- name: alpinecontainer                 # Container name 
+            #image: alpine                # Container image
+            #command: ["sleep", "3600"]
+  replicas: 6
+  selector:
+    matchLabels:
+      app: myapppod
