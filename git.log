@@ -16,3 +16,11 @@ To github.com:balzdesh/k8syamls.git
    9233acf..c3d5725  main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 Already up to date.
+date: extra operand ‘%H:%M:%S"’
+Try 'date --help' for more information.
+[main 94255f6] changes done on
+ 1 file changed, 8 insertions(+)
+To github.com:balzdesh/k8syamls.git
+   c3d5725..94255f6  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Already up to date.
