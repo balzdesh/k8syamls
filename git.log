@@ -1,1 +1,10 @@
 git add . && git commit -m "changes done on $(date +\"%d-%b-%Y %H:%M:%S"\")" && git push -u origin main && git pull: 1: Syntax error: end of file unexpected (expecting ")")
+date: extra operand ‘%H:%M:%S"’
+Try 'date --help' for more information.
+[main 9233acf] changes done on
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 text.txt
+To github.com:balzdesh/k8syamls.git
+   93338a3..9233acf  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Already up to date.
